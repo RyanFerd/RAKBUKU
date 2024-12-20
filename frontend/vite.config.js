@@ -4,13 +4,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    target: 'es2019',
+    target: 'esnext',
   },
   test: {
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/setupTests.js',
-    passWithNoTests: true,
+    passWithNoTests: false,
     coverage: {
       reporter: ['text', 'html'],
     },
