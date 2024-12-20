@@ -14,11 +14,11 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: |
-          cd Backend
+          cd backend
           npm install
       - name: Run tests
         run: |
-          cd Backend
+          cd backend
           npm test
 
   build-frontend:
@@ -32,9 +32,9 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: |
-          cd Frontend
+          cd frontend
           npm install
       - name: Run tests
         run: |
-          cd Frontend
+          cd frontend
           npm test
